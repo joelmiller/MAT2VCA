@@ -5,7 +5,7 @@ format: jb-book
 root: VC_Intro
 chapters:
 - file: notebooks/Chapter1
-# - file: Laplace
+- file: Laplace
 # - file: intro
 # - file: markdown
 # - file: notebooks
