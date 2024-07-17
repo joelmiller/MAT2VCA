@@ -22,16 +22,19 @@ update names as appropriate.
     the folder containing the .md files whose name is
     notebooks.  It may be better to not create this
     subdirectory.  A decision for a later time, I guess.
-    
+
 
 - at first time uploading be sure to set up .gitignore
   - Should ignore 
     - _build
     - *.log
+  - if using repository template, need to unignore:
+    - *html
+    - docs
 
 - ensure files are added to github repository.
 
-<at this step look farther below and do steps to build book>
+<at this step look further below and do steps to build book>
 
 - go to github under settings find pages
   set up to use master/docs 
