@@ -1,0 +1,68 @@
+
+#comment
+The instructions below were created for MAT2VCA
+update names as appropriate.
+
+
+
+# Creating initial folders etc:
+- run jupyterbook stuff etc to get starting files in place.
+  - if github repository already created 
+    go into the repository and run 
+    
+    jupyter-book create MAT2VCA
+    
+  - This will create a subdirectory MAT2VCA
+    where all the text files (.md, .ipynb) will sit.
+    Later the html files will be in a folder called
+    docs which will sit at the same level as MAT2VCA
+    You may prefer to just call it `mybook`
+
+  - I have stored the notebooks in a subdirectory of
+    the folder containing the .md files whose name is
+    notebooks.  It may be better to not create this
+    subdirectory.  A decision for a later time, I guess.
+    
+
+- at first time uploading be sure to set up .gitignore
+  - Should ignore 
+    - _build
+    - *.log
+
+- ensure files are added to github repository.
+
+<at this step look farther below and do steps to build book>
+
+- go to github under settings find pages
+  set up to use master/docs 
+  check url where things appear
+
+- Formatting is probably bad on first attempt
+  - edit _config.yml by adding 
+          baseurl: /MAT2VCA/ 
+    under the html block.
+    [add explanatory comment to yml file]
+
+
+#ADDING NEW CHAPTER ETC:
+
+- Put new file in MAT2VCA
+  - if a notebook, put into MAT2VCA/notebooks
+- Add details to _toc
+
+
+#COMPILE - follow instructions below each time
+# In vscode terminal go to folder and build book
+
+- jupyter-book build MAT2VCA
+
+Now it is built in _build/html
+
+# remove docs directory if not first time 
+# (otherwise it may refuse to overwrite files with new versions).
+
+rm -r docs
+
+#move directory _build/html to docs
+
+mv _build/html docs

@@ -1,9 +1,6 @@
 # ignore ALL .log files
 *.log
 
-# ignore the file showing workflow steps
-workflow.txt
-
 # ignore files created while building book
 _build
 
